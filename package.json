@@ -1,0 +1,23 @@
+{
+  "name": "antiraid-tickets",
+  "version": "1.0.0",
+  "description": "Official AntiRaid Tickets Bot",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anti-Raid/ticketsbot.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Anti-Raid/ticketsbot/issues"
+  },
+  "homepage": "https://github.com/Anti-Raid/ticketsbot#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  }
+}
