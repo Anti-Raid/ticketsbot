@@ -22,6 +22,7 @@ client.config = config;
 const { readdirSync } = require('fs');
 const { join } = require('path');
 const loadersPath = join(__dirname, 'Handler');
+const mongoose = require("mongoose")
 
 for (const loaderFile of readdirSync(loadersPath).filter(cmdFile => cmdFile.endsWith('.js'))) {
 	const loader = require(`${loadersPath}/${loaderFile}`);
@@ -29,4 +30,4 @@ for (const loaderFile of readdirSync(loadersPath).filter(cmdFile => cmdFile.ends
 }
 
 
-client.login(config.bot.token)
+client.login(config.bot.token);
