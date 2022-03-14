@@ -1,5 +1,7 @@
 module.exports = {
     capitalize: (string) => {
-        return string.charAt(0).toUpperCase() + string.slice(1);
+        return string.toLowerCase()
+        .replace(/(^|"|_)(\S)/g, (s) => s.toUpperCase())
+        .replace(/_/g, ' ');
     }
 }
